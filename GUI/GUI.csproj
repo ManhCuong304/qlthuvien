@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Quản Lý Mượn Sách.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,18 +87,6 @@
     <Compile Include="Quản Lý Đọc Giả.Designer.cs">
       <DependentUpon>Quản Lý Đọc Giả.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tìm Kiếm Sách.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tìm Kiếm Sách.Designer.cs">
-      <DependentUpon>Tìm Kiếm Sách.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ĐăngNhập.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ĐăngNhập.Designer.cs">
-      <DependentUpon>ĐăngNhập.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuảnLý.cs">
@@ -101,6 +94,12 @@
     </Compile>
     <Compile Include="QuảnLý.Designer.cs">
       <DependentUpon>QuảnLý.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Đăng Nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đăng Nhập.Designer.cs">
+      <DependentUpon>Đăng Nhập.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Quản Lý Mượn Sách.resx">
       <DependentUpon>Quản Lý Mượn Sách.cs</DependentUpon>
@@ -120,23 +119,16 @@
     <EmbeddedResource Include="Quản Lý Đọc Giả.resx">
       <DependentUpon>Quản Lý Đọc Giả.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tìm Kiếm Sách.resx">
-      <DependentUpon>Tìm Kiếm Sách.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ĐăngNhập.resx">
-      <DependentUpon>ĐăngNhập.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="QuảnLý.resx">
       <DependentUpon>QuảnLý.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Đăng Nhập.resx">
+      <DependentUpon>Đăng Nhập.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,6 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2024-10-16 140318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhnentv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangbiasach.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

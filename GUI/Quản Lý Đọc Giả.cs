@@ -26,5 +26,10 @@ namespace GUI
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Bạn có muốn trở về không ?","Thông Báo",MessageBoxButtons.YesNo);
+        }
     }
 }
